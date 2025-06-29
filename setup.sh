@@ -37,7 +37,7 @@ git_clone(){
     umask 022
     echo -e "${green}[*] Cloning theme to $path_to_git_clone.${no_color}"
     [ -d "$path_to_git_clone"/sddm-astronaut-theme ] && sudo mv "$path_to_git_clone"/sddm-astronaut-theme "$path_to_git_clone"/sddm-astronaut-theme_$date && echo -e "${green}[*] Old configs detected in $path_to_git_clone, backing up.${no_color}"
-    git clone -b master --depth 1 https://github.com/keyitdev/sddm-astronaut-theme.git "$path_to_git_clone"/sddm-astronaut-theme
+    git clone -b master --depth 1 https://github.com/Gallophostrix/sddm-astronaut-theme.git "$path_to_git_clone"/sddm-astronaut-theme
 }
 
 copy_files(){
